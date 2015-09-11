@@ -6,9 +6,13 @@ var indexOfMinimum = function(array, startIndex) {
 
     // Loop over items starting with startIndex, 
     // updating minValue and minIndex as needed:
+    //For Loop
     for(var minIndex = minIndex + 1; minIndex < array.length; minIndex){
+        //Tests to see if next value is smalller than the value to the left of it on the array
         if(array[minIndex] < minValue){
+            //increments minIndex, allowing the sort function to check the next values
             minIndex = minIndex + 1;
+            //sets new value
             minValue = array[minIndex];
             break;
         }
